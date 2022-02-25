@@ -1,0 +1,53 @@
+body{
+    background-image: url("background_image.jpg");
+    width: 100%;    
+       
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    margin-left: 46%;  
+ 
+
+}
+p{
+    font-size: 18px;
+    color: #fff;
+    margin-left: 38%;
+}
+#description{
+    box-sizing: border-box;
+    background-color: black;
+    color: #fff;
+    width: 20%;
+    margin-left: 40%;
+ 
+
+}
+.box {
+    padding: 5px 10px 5px 10px;
+              
+}
+.box1 input{
+    padding: 8px;
+    width: 90%;
+    margin-top: 12px;
+}
+
+.btn {
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 16px;
+    margin-bottom: 8px;
+    width: 20%;
+    padding: 10px;
+    margin-left: 40%;
+}
+.ysn{
+    background-color: black;
+    width: 95%;
+    opacity: 0.4;
+    margin-left: 2%;
+    
+}

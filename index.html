@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <style>
+      body {
+        background-image: url("background_image.jpg");
+      }
+      #container {
+        position: relative;
+      }
+      h1 {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-weight: bolder;
+        font-size: 50px;
+        text-align: center;
+        color: white;
+        position: absolute;
+        margin-top: 10px;
+        margin-left: 41%;
+      }
+      p {
+        position: absolute;
+        margin-top: 60px;
+        margin-left: 36.5%;
+        font-family: "Times New Roman", Times, serif;
+        text-align: center;
+        color: white;
+      }
+      #title {
+        background-color: rgba(0, 0, 0, 0.6);
+        margin: 2% 3%;
+        height: 800px;
+        height: 860px;
+      }
+
+      #description {
+        position: absolute;
+        display: inline-block;
+        background-color: rgba(0, 0, 0, 1);
+        padding: 12px;
+        left: 40%;
+        top: 10%;
+        height: 750px;
+      }
+      .box {
+        color: white;
+        padding: 5px 10px;
+      }
+      .box1 input {
+        padding: 8px;
+        width: 90%;
+        margin-top: 12px;
+        background-color: white;
+      }
+      label {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .btn {
+        background-color: red;
+        color: #fff;
+        border: none;
+        border-radius: 16px;
+        width: 40%;
+        padding: 10px;
+        margin-left: 30%;
+        margin-top: 6px;
+        cursor: pointer;
+      }
+      span {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <main id="title">
+        <h1>NET<span>FLIX</span></h1>
+        <p>Thank you for singing up Netflix. Tell us more about yourself.</p>
+        <form id="description" action="result.html">
+          <div class="box box1">
+            <label for="name">Name </label><br />
+            <input
+              type="text"
+              name="username"
+              id="name"
+              placeholder="enter your name"
+            /><br /><br />
+            <label for="age">Age </label><br />
+            <input
+              type="text"
+              name="age"
+              id="age"
+              placeholder="age"
+            /><br /><br />
+            <label for="email">Email</label><br />
+            <input
+              type="email"
+              name="mail"
+              id="email"
+              placeholder="enter your Email"
+            /><br /><br />
+
+            <label for="series">Content Type</label><br />
+            <input type="text" name="series" id="series" list="contents" />
+            <datalist id="contents">
+              <option selected value="Series">Series</option>
+              <option value="Movies">Movies</option>
+              <option value="Documentary">Documentary</option>
+              <option value="Tv Shows">Tv Shows</option></datalist
+            ><br /><br />
+          </div>
+          <div class="box">
+            <label for="movies">Movie Type</label><br />
+            <input type="checkbox" name="comedy" id="movies" />
+            <label for="type">Comedy</label><br />
+            <input type="checkbox" name="action" id="movies" />
+            <label for="type">Action</label><br />
+            <input type="checkbox" name="romance" id="movies" />
+            <label for="type">Romance</label><br />
+            <br />
+          </div>
+          <div class="box">
+            <label for="gender">Gender</label><br />
+            <input type="radio" name="gender" id="gender" />
+            <label for="gender">Male</label><br />
+            <input type="radio" name="gender" id="gender" />
+            <label for="gender">Female</label><br />
+            <input type="radio" name="gender" id="gender" />
+            <label for="gender">Other</label><br />
+          </div>
+          <div class="box text">
+            <label for="comment">Feedback</label><br />
+            <textarea
+              name="comment"
+              id="comment"
+              cols="43"
+              rows="7"
+              placeholder="any comment"
+            ></textarea>
+          </div>
+          <div>
+            <button type="submit" class="btn">Send</button>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
